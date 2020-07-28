@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒模型</title>
+  <style>
+    .container {
+      background-color: red;
+      margin-top: 40px;
+    }
+
+    .container1 {}
+
+    .container2 {}
+
+    .block {
+
+      height: 40px;
+      width: 100px;
+      background-color: gray;
+      color: #fff;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid red;
+    }
+
+    .inline {
+      height: 40px;
+      width: 100px;
+      background-color: gray;
+      color: #fff;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <article>
+    <header></header>
+    <section>
+      <div class="container container1">
+        <span class="inline">行内元素</span>
+      </div>
+      <div class="container container1">
+        <span class="inline">行内元素</span>
+      </div>
+      <div class="container container2">
+        <div class="block"></div>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>
